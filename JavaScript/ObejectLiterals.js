@@ -100,26 +100,50 @@
 // console.log(Math.floor(n));
 
 
+// Practice questions
 
 // guess game 
-const max = prompt("enter the max number");
-const random = Math.floor(Math.random()*max)+1;
+// const max = prompt("enter the max number");
+// const random = Math.floor(Math.random()*max)+1;
 
-let guess = prompt("guess the number");
+// let guess = prompt("guess the number");
 
-while(true){
-    if(guess == "quit"){
-        console.log("you quit the game.");
-        break;
-    }
-    if(guess == random){
-        console.log("Congratulation you guess is correct number!");
-        break;
-    }
-    if(guess < random){
-        guess = prompt("your guess is small , Please try again");
-    }
-    if(guess > random){
-        guess = prompt("your guess is grater than random , please try again");
-    }
-};
+// while(true){
+//     if(guess == "quit"){
+//         console.log("you quit the game.");
+//         break;
+//     }
+//     if(guess == random){
+//         console.log("Congratulation you guess is correct number!");
+//         break;
+//     }
+//     if(guess < random){
+//         guess = prompt("your guess is small , Please try again");
+//     }
+//     if(guess > random){
+//         guess = prompt("your guess is grater than random , please try again");
+//     }
+// };
+
+
+// Create an object Person with their name, age and city. 
+// Edit their city’s original value to change it to “NewYork”.
+//  Add a new property country and set it to the United States.
+
+// let Person ={
+//     name : "Mridul",
+//     age : 24,
+//     city : "Himachal"
+
+// };
+// Person.city = "NewYork";
+// console.log(Person);
+// Person.country = "United States";
+// console.log(Person);
+
+// Create a program that generates a random number representing a dice roll.
+// [Thenumbershouldbebetween1and6]
+
+// let dice = Math.random()*6 +1;
+// dice = Math.floor(dice);
+// console.log(dice);
