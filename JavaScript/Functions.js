@@ -145,19 +145,69 @@
 
 // Method funciton 
 
-let calculator = {
-    num : 56,
-    add : function(a,b){
-        return a +b;
-    },
-    sub : function(a,b){
-        return a -b;
-    },
-    mul : function(a,b){
-        return a * b;
-    }
+// let calculator = {
+//     num : 56,
+//     add : function(a,b){
+//         return a +b;
+//     },
+//     sub : function(a,b){
+//         return a -b;
+//     },
+//     mul : function(a,b){
+//         return a * b;
+//     }
+// };
+// console.log(calculator.add(2,3));
+// console.log(calculator.sub(3,2));
+// console.log(calculator.mul(2,3));
+// console.log(calculator.num);
+
+
+// This keyword
+
+// let student = {
+//     name : "Mridul",
+//     age : 20,
+//     eng: 90,
+//     math : 97,
+//     phy : 93,
+//     avgmarks(){
+//         let avg = (this.eng + this.math + this.phy)/3;
+//         console.log(`${this.name} got avg marks = ${avg}`);
+//     }
+// }
+// student.avgmarks();
+
+// Try and Catch
+
+// console.log("hello");
+// try{
+//     console.log(a);
+// }catch(error){
+//     console.log("caught an error .. a is not defined");
+//     console.log(error);
+// }
+// console.log("hello");
+// console.log("hello");
+// console.log("hello");
+
+
+
+// <-------- Miscellaneaes topics --------->
+
+// Arrow Function
+
+const sum = (a,b) => {
+    console.log(a+b);
 };
-console.log(calculator.add(2,3));
-console.log(calculator.sub(3,2));
-console.log(calculator.mul(2,3));
-console.log(calculator.num);
+sum(3,4);
+
+const cube = (n) => {
+    return n*n*n;
+}
+console.log(cube(3));
+
+let pow = (a,b) =>{
+    return a ** b;
+}
+console.log(pow(2,3));
