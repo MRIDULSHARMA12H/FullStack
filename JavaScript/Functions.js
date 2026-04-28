@@ -197,17 +197,34 @@
 
 // Arrow Function
 
-const sum = (a,b) => {
-    console.log(a+b);
-};
-sum(3,4);
+// const sum = (a,b) => {
+//     console.log(a+b);
+// };
+// sum(3,4);
 
-const cube = (n) => {
-    return n*n*n;
-}
-console.log(cube(3));
+// const cube = (n) => {
+//     return n*n*n;
+// }
+// console.log(cube(3));
 
-let pow = (a,b) =>{
-    return a ** b;
-}
-console.log(pow(2,3));
+// let pow = (a,b) =>{
+//     return a ** b;
+// }
+// console.log(pow(2,3));
+
+// SetTimeout function
+
+// console.log("hello")
+
+// setTimeout( () =>{
+//     console.log("Mridul");
+// } , 4000);
+// console.log("hi");
+
+
+// SetInterval function
+
+let id = setInterval( () =>{
+    console.log("Mridul");
+} , 2000);
+clearInterval(id);
