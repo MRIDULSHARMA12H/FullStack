@@ -224,7 +224,23 @@
 
 // SetInterval function
 
-let id = setInterval( () =>{
-    console.log("Mridul");
-} , 2000);
-clearInterval(id);
+// let id = setInterval( () =>{
+//     console.log("Mridul");
+// } , 2000);
+// clearInterval(id);
+
+// Practice questions
+// Square function with Arrow function
+
+// const square = (n) => (n*n);
+// console.log(square(4));
+
+// Print hello world 5 time at intervals of 2s each
+
+let id = setInterval(() => {
+    console.log("hello world");
+},2000);
+setTimeout(() => {
+    clearInterval(id);
+    console.log("clear interval run");
+} , 10000);
