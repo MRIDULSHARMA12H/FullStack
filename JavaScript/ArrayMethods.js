@@ -63,7 +63,53 @@
 
 
 // Every Method 
-let num1 = [1,2,3,4,5];
-console.log(num1.every((el) => el% 2 ==0));
-let num2 = [2,4,6,8];
-console.log(num2.every((el) => el% 2 ==0));
+// let num1 = [1,2,3,4,5];
+// console.log(num1.every((el) => el% 2 ==0));
+// let num2 = [2,4,6,8];
+// console.log(num2.every((el) => el% 2 ==0));
+
+
+// Reducer method they return single value from the array
+
+// let arr = [1,2,3,4];
+
+// console.log(arr.reduce(function(res,el) {
+//     return(res+el);
+// }));
+
+// console.log(arr.reduce((res , el) => (res*el)));
+
+// find maximum 
+// let num = [3,4,2,6,2,7,8,2,9,4,4];
+
+// let ans = num.reduce((max,el) =>
+// {
+//     if(max <el){
+//         return el;
+//     }
+//     else{
+//         return max;
+//     }
+// });
+// //  for minimum
+// let ans2 = num.reduce((min , el) =>{
+//     if(min < el){
+//         return min;
+//     }else{
+//         return el;
+//     }
+// });
+
+
+// console.log(ans);
+// console.log(ans2);
+
+
+// Check if arrays element multiple of 10 or not
+
+let arr = [1,2,3,4,5,6];
+ 
+let res = arr.every((el)=> {
+    return el % 10 == 0;
+});
+console.log(res);
