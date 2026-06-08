@@ -107,9 +107,84 @@
 
 // Check if arrays element multiple of 10 or not
 
-let arr = [1,2,3,4,5,6];
+// let arr = [1,2,3,4,5,6];
  
-let res = arr.every((el)=> {
-    return el % 10 == 0;
-});
-console.log(res);
+// let res = arr.every((el)=> {
+//     return el % 10 == 0;
+// });
+// console.log(res);
+
+
+// Spread method 
+// let arr = [1,2,3,4,4,6,7,8,9,1,2,3,4,5,67,8,0,0,0,0,1,2,2,5];
+// // for(let i= 0 ; i<arr.length ; i++){
+// //     console.log(arr[i]);
+// // }
+// arr.push(-1);
+// console.log(arr);
+// console.log(Math.min(...arr));   // spread -> ...
+
+//  Spread with array literals
+// let arr = [1,2,3,4,5];
+// let newArr = [...arr];
+// newArr.push(6);
+// console.log(newArr);
+// console.log(arr);.
+
+// spread with object literals
+
+// let data = {
+//     email :"mridul@gamil.com",
+//     Pasword : "abc1" 
+// };
+// // console.log(data);
+
+// let dataCopy = {...data , id : 123};
+// console.log(dataCopy.email);
+// let arr = [1,2,3,4,5];
+// let arrCopy = {...arr};  // there the key is the index of value .
+// console.log(arrCopy);
+
+
+// Rest 
+//  function sum(...args){
+//     for(let i = 0 ; i< args.length ; i++){
+//         console.log("you give us : " , args[i] );
+//     }
+//  }
+//  console.log(sum(1,2,3,4,5));   // we givt multiple value in one argument they convert into  array.
+
+// function Sum(...ab){
+//     return ab.reduce((sum,el) => sum +el);
+// }
+// console.log(Sum(1,2,3,4));
+
+// function min( msg ,...mm){
+//     console.log(msg);
+//     return mm.reduce((min , el) =>{
+//         if(min > el){
+//             return el;
+//         }else {return min};
+//     });
+// };
+// console.log(min("hello" ,1,2,3,4,5 , -6,-9,10));
+
+
+// Destructuring -> Storing multiple value of array in multiple variable
+let names = ["tony" , "steve" , "bruce" , "peter" , "abc", "pyq" , "stu"];
+
+let [winner , runnerup , secondrunnerup , ...others] = names;   // winner or all are variables but ...other is the array
+//  console.log(winner);
+
+// for objects
+const student = {
+    name : "tony",
+    age : 14,
+    class : 10,
+    subject : ["hindi" , "english" , "math" , "science"],
+    username : "tony@12",
+    password : "abc2"
+};
+ let {username , subject , password} = student
+
+console.log(subject[0], username , password);
